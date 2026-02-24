@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TGO - Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <h3 class="logo">TGO CHATS</h3>
+            <div id="tabList">
+                <div class="tab active" onclick="switchTab('global')">🌍 Global Chat</div>
+            </div>
+            <button onclick="logout()" class="logout-btn">LOGOUT</button>
+        </div>
+
+        <div class="main-chat">
+            <div class="header">
+                <h2 id="chatTitle">Global Chat</h2>
+                <button onclick="editDisplayName()" class="header-btn">Edit Name</button>
+            </div>
+            <div id="messages" class="chat-box"></div>
+            <div class="input-area">
+                <input id="messageInput" placeholder="Type a message...">
+                <button onclick="sendMessage()">SEND</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="chat.js"></script>
+</body>
+</html>
